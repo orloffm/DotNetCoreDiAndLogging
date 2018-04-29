@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using AutofacTools;
 using CatLibrary;
 using NLog.Extensions.Logging;
 
@@ -11,10 +12,7 @@ namespace ConsoleApp
         {
             // Autofac container.
             var builder = new ContainerBuilder();
-            // Specifically create a single instance of a logger.
-            var logger = new NLogLoggerFactory().CreateLogger("TEST");
-            // The logger instance is auto-registered as implementation of ILogger.
-            builder.RegisterInstance(logger);
+            builder.RegisterModule<NLoggerModule>();
             // The type Cat is added to container so that it would be able to provide instances of it.
             builder.RegisterType<Cat>();
             var container = builder.Build();
