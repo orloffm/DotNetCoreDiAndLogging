@@ -29,7 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutofacTools\AutofacTools.csproj" />
     <ProjectReference Include="..\CatLibrary\CatLibrary.csproj" />
   </ItemGroup>
 

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Reflection;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
 namespace CatLibrary
 {
@@ -10,12 +8,6 @@ namespace CatLibrary
 
         public Cat(ILogger<Cat> logger)
         {
-            Type t = logger.GetType();
-            var f = t.GetField("_logger", BindingFlags.NonPublic |
-                                          BindingFlags.Instance);
-            var fieldValue = f.GetValue(logger);
-            Type ft = fieldValue.GetType();
-
             _logger = logger;
         }
 

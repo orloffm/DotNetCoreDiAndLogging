@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatLibrary", "CatLibrary\CatLibrary.csproj", "{6A9E1608-8DA9-43C9-BDC0-A1A3742599EE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutofacTools", "AutofacTools\AutofacTools.csproj", "{F1B4DA58-B756-4137-8B1C-C8AB4B572191}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebApplication", "CoreWebApplication\CoreWebApplication.csproj", "{1920EC47-A4AE-4E50-9F32-3BC074995BBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{6A6EF69C-2E74-4BF7-8D86-ED08EDD9DEE2}"
@@ -21,10 +19,6 @@ Global
 		{6A9E1608-8DA9-43C9-BDC0-A1A3742599EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A9E1608-8DA9-43C9-BDC0-A1A3742599EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A9E1608-8DA9-43C9-BDC0-A1A3742599EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1B4DA58-B756-4137-8B1C-C8AB4B572191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1B4DA58-B756-4137-8B1C-C8AB4B572191}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1B4DA58-B756-4137-8B1C-C8AB4B572191}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1B4DA58-B756-4137-8B1C-C8AB4B572191}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1920EC47-A4AE-4E50-9F32-3BC074995BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1920EC47-A4AE-4E50-9F32-3BC074995BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1920EC47-A4AE-4E50-9F32-3BC074995BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -53,10 +53,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AutofacTools\AutofacTools.csproj">
-      <Project>{f1b4da58-b756-4137-8b1c-c8ab4b572191}</Project>
-      <Name>AutofacTools</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CatLibrary\CatLibrary.csproj">
       <Project>{6a9e1608-8da9-43c9-bdc0-a1a3742599ee}</Project>
       <Name>CatLibrary</Name>
