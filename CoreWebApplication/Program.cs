@@ -1,20 +1,36 @@
-﻿using Microsoft.AspNetCore;
+﻿using System;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using NLog;
+using NLog.Web;
 
 namespace CoreWebApplication
 {
-public class Program
-{
-    public static void Main(string[] args)
+    public class Program
     {
-        BuildWebHost(args).Run();
-    }
+        public static IWebHost BuildWebHost(string[] args)
+        {
+            return WebHost.CreateDefaultBuilder(args)
+                .UseNLog()
+                .UseStartup<Startup>()
+                .Build();
+        }
 
-    public static IWebHost BuildWebHost(string[] args)
-    {
-        return WebHost.CreateDefaultBuilder(args)
-            .UseStartup<Startup>()
-            .Build();
+        public static void Main(string[] args)
+        {
+            // NLog: setup the logger first to catch all errors
+            Logger logger = NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
+            try
+            {
+                logger.Debug("init main");
+                BuildWebHost(args).Run();
+            }
+            catch (Exception e)
+            {
+                //NLog: catch setup errors
+                logger.Error(e, "Stopped program because of exception");
+                throw;
+            }
+        }
     }
-}
 }
